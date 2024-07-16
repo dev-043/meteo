@@ -1,0 +1,107 @@
+a.nav-link {
+    color: #cc0000;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu{ display: none; }
+    .navbar .nav-item:hover .nav-link{   }
+    .navbar .nav-item:hover .dropdown-menu{ display: block; }
+    .navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+/* ============ desktop view .end// ============ */
+
+body {
+    background-color: #BBE6FF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; }
+
+p {
+    font-size: 0.85em; }
+
+/* === Voor de tussenkopjes === */
+.titel-blok {
+    display: inline-block;
+    content: "dfdsfsf";
+    border-left: .3em solid #0099CC;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+/* === Voor de tussenkopjes bij verwachtingen === */
+.titel-blokjes {
+    display: inline-block;
+    content: "dfdsfsf";
+    border-left: .3em solid #0099CC;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    background-color:#66CCFF;
+    width: 100%;
+}
+
+/* === Voor de HR tussen de secties in === */
+.tussenbalk {
+    border: 3px solid #0099CC;
+    border-radius: 5px;
+}
+
+/* ====== Achtergrond kleuren ====== */
+.blauw-menu {
+    background-color: #0099CC;
+}
+
+.blauw-content {
+    background-color: #66CCFF;
+}
+
+/* ====== Tabelstijl voor 7 daagse verwachting ====== */
+table.verwachting {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabel-rood {
+    color: #cc0000;
+    font-weight: 600;
+}
+
+.tabel-blauw {
+    color: #0000ff;
+    font-weight: 600;
+}
+
+.tabel-titel {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+/* ====== Tabelstijl voor weerstation ====== */
+
+table.weerstation {
+    background-color: #0099CC;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 0.7em;
+    color: white;
+    text-align: left;
+    line-height: 1.85em;
+    width: 100%;
+    border: 5px;
+}
+
+.lead {
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 10px;
+}

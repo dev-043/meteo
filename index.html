@@ -1,0 +1,344 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="ster.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="htmlcss bootstrap menu, navbar, hover nav menu CSS examples" />
+        <meta name="description" content="Bootstrap 5 navbar hover examples for any type of project, Bootstrap 5" />  
+
+        <!-- ============= Caching uitzetten ============== -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Expires" content="0" />       
+
+        <title>MeteoMaastricht :::...</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+
+        <link href="meteo-style.css" rel="stylesheet">
+    </head>
+<body>
+    <div class="container p-0">
+        <!-- ============= MENU BEGIN ============== -->
+        <nav class="navbar navbar-expand-lg navbar-dark blauw-menu sticky-top shadow rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <!-- == SVG voor witte ster == -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" fill="currentColor" class="mb-2 bi bi-star-fill" viewBox="0 0 16 16">
+                    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg> MeteoMaastricht 2</a>
+                <!-- == Button voor Hamburger menu op mobiele weergave == -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"  aria-expanded="false" aria-label="Navigatie menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Actueel </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Webcam </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Weerfoto </a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Links </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Weer Stations </a></li>
+                            <li><a class="dropdown-item" href="#"> Diverse Weersites </a></li>
+                            <li><a class="dropdown-item" href="#"> Weermodellen </a></li>
+                            <li><a class="dropdown-item" href="#"> Natuurfoto's </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#"> Contact </a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Gastenboek </a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown"> Archief </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#"> Weer Archief</a></li>
+                            <li><a class="dropdown-item" href="#"> MeteoMaastricht media </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+        </nav>
+        <!-- ============= MENU EINDE ============== -->
+
+        <section class="section-content m-1 bg-primary"> <!-- Deze M-1 zorgt ervoor dat menubalk en content even breed zijn -->
+            <div class="container-fluid-lg py-2">
+                <div class="row blauw-content m-0">
+                    <div class="col-sm-6 order-2 order-lg-1 col-lg-4 py-3"><!-- == Actuele temperatuur & webcam beeld == -->
+                        <h5 class="text-center">Het weer nu in Maastricht</h5>
+                        <p class="text-center">Actuele Temperatuur: 32,4 &deg; om 12:55u</p>
+                        <a title="Klik hier voor de grotere afbeelding en nog 2 andere webcams" href="https://www.meteomaastricht.nl/webcam.htm"><img src="https://meteomaastricht.nl/cam_1.jpg" onmouseover="this.src='https://meteomaastricht.nl/cam_2.jpg'" onmouseout="this.src='https://meteomaastricht.nl/cam_1.jpg'" class="img-fluid"></a>
+                    </div><!-- einde col //  -->
+                    <div class="col-sm-6 order-1 order-lg-2 col-lg-8 py-3"><!-- == Tabel weersverwachting == -->
+                        <h5 class="text-center">Weersverwachting</h5>
+                        <p class="text-center"><light>Van: zaterdag 2 september 2023 - 10.25uur</light></p>
+                        <table class="table verwachting table-hover align-middle">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Za</th>
+                                    <th>Zo</th>
+                                    <th>Ma</th>
+                                    <th>Di</th>
+                                    <th>Wo</th>
+                                    <th>Do</th>
+                                    <th>Vr</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td><img src="https://meteomaastricht.nl/icon/01.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/21.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/01.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/02.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/03.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/02.gif" width="30"></td>
+                                <td><img src="https://meteomaastricht.nl/icon/10.gif" width="30"></td>
+                            </tr>
+                            <tr>
+                                <td class="tabel-blauw">15</td>
+                                <td class="tabel-blauw">-14</td>
+                                <td class="tabel-blauw">13</td>
+                                <td class="tabel-blauw">11</td>
+                                <td class="tabel-blauw">15</td>
+                                <td class="tabel-blauw">-14</td>
+                                <td class="tabel-blauw">12</td>
+                            </tr>
+                            <tr>
+                                <td class="tabel-rood">28</td>
+                                <td class="tabel-rood">29</td>
+                                <td class="tabel-rood">32</td>
+                                <td class="tabel-rood">27</td>
+                                <td class="tabel-rood">19</td>
+                                <td class="tabel-rood">22</td>
+                                <td class="tabel-rood">32</td>
+                                </tr>
+                                <tr>
+
+                                <td><img src="https://meteomaastricht.nl/icon/wind/o.png" width="30"><br>2</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/no.png" width="30"><br>3</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/nw.png" width="30"><br>8</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/zw.png" width="30"><br>5</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/zzw.png" width="30"><br>4</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/nno.png" width="30"><br>2</td>
+                                <td><img src="https://meteomaastricht.nl/icon/wind/o.png" width="30"><br>8</td>
+                                </tr>
+                        </table>
+                    </div><!-- einde kolom //  -->
+                </div><!-- einde row //  -->
+                <div class="row "><!-- Begin row met 3 kolommen met actueel weer / uitgebreide verwachtingen / snelle links -->
+                    <div class="col-sm-6 col-lg-4 py-3 order-3 order-lg-1"><!-- == Actueel weer == -->
+                        <h5>Actueel weer in detailjjj:</h5>
+                        <h6>Weerstation:</h6>
+                        <table class="weerstation">
+                            <tr>
+                                <td class="lead"><strong>25,4</strong> &deg;</td>
+                                <td>Buitentemperatuur</td>
+                            </tr>
+                            <tr>
+                                <td class="lead">66 %</td>
+                                <td>Vochtigheid</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">13,9 &deg;</td>
+                                <td>Dauwpunt</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">1.027,4</td>
+                                <td>Luchtdruk</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">13,3 mm</td>
+                                <td>Regentotaal / Dag</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">20,5</td>
+                                <td>Max. Intensiteit / 1u</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">ENE 72 &deg;</td>
+                                <td>Windrichting</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">3.5 km/u</td>
+                                <td>Wind (5 minuten)</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">8.0 km/u</td>
+                                <td>Windstoot (5 minuten)</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">0.0 index</td>
+                                <td>UV-index</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">6.55 uur</td>
+                                <td>Zonsopkomst</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">20.19 uur</td>
+                                <td>Zonsondergang</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">13.4 &deg;</td>
+                                <td>Minimum Temperatuur</td>
+                                </tr>
+                                <tr>
+                                <td class="lead">25.6 &deg;</td>
+                                <td>Maximum Temperatuur</td>
+                                </tr>
+                        </table>
+                        <h6>Neerslagradar Benelux:</h6>
+                        <p><img width="100%" src="https://cdn.knmi.nl/knmi/map/page/weer/actueel-weer/neerslagradar/WWWRADAR_loop.gif"></p>
+                        
+                        <h6>Bliksemradar Benelux:</h6>
+                        <p><img width="100%" src="https://www.wetteronline.de/?pid=p_blitze_map&ireq=true&src=blitze/vermarktung/p_blitze_map/www/Track/NL/green_flat/NL_Track.gif"></p>
+                        
+                        <h6>Satellietbeeld Benelux:</h6>
+                        <p><a title="Switch hier tussen visueel en infrarood door met de muis op de afbeelding te gaan staan">
+                            <img src="https://www.sat24.com/image2.ashx?region=nl&amp;ir=false" onmouseover="this.src='https://www.sat24.com/image2.ashx?region=nl&ir=true'" onmouseout="this.src='https://www.sat24.com/image2.ashx?region=nl&ir=false'" width="100%"></a></p>
+
+                        <h6>Neerslagradar West-Europa:</h6>
+                        <p><img width="100%" src="https://www.meteox.com/images.aspx?jaar=-3&voor=&soort=loop1uur"></p>
+                        
+                        <h6>Actuele temperaturen</h6>
+                        <p><img width="100%" src="https://cdn.knmi.nl/knmi/map/page/weer/actueel-weer/temperatuur.png"></p>
+                        
+                        <a id="sectie-shoutbox"></a>
+                        <h6>Shoutbox - Geef hier een weermelding door</h6>
+                        <div class="ratio ratio-1x1">
+                            <iframe class="embed-responsive-item" src="https://meteomaastricht.ishoutbox.com/"></iframe>
+                        </div>
+                        <p>
+                            Zie je een Cookie melding? Open de shoutbox dan in een nieuw venster
+                            <a href="https://meteomaastricht.ishoutbox.com/" target="_blank" class="btn btn-sm btn-outline-primary btn-lg" role="button" aria-pressed="true">Open shoutbox in nieuw venster</a>
+                        </p>
+                    </div><!-- Einde kolom actueel weer -->
+                    <div class="col-sm-6 col-lg-8 py-3 order-2 order-lg-2"><!-- == Uitgebreide verwachtingen & widgets == -->
+                        <h5>Verwachtingen voor de komende dagen in detail:</h5>
+                        <p><strong>Verwachting zondag 3 september 2023:</strong></p>
+                        <p>
+                            <em>Zondag een grijze start, later op de dag wel overal fletse zonneschijn.</em><br />
+                            In de nacht en vroege ochtend was het overal droog.
+                            Op velden met wat dunne hoge bewolking uitgezonderd verliep de nacht grotendeels opgeklaard.
+                            Het werd wel overal nevelig en na 04.00 uur op steeds meer plaatsen ook mistig.
+                            De minimum temperatuur daalde naar 13 of 14 graden.
+                            Zondag overdag begint de ochtend in Zuid-Limburg met nevel en mist op de meeste plaatsen, bij dichtere mist is zelfs wat hele lichte motregen mogelijk.
+                            Later in de ochtend gaat de nevel en mist steeds verder oplossen en wordt er voor de rest een droge en vrij zonnige dag verwacht.
+                            De zon schijnt echter niet voluit omdat er velden met hoge bewolking zullen blijven voorkomen, deze schijnt er meestal nog wel redelijk doorheen maar er zijn ook momenten mogelijk dat deze bewolking net wat dikker wordt zodat de zon er toch meer moeite mee zal hebben.
+                            De middagtemperatuur loopt wel weer redelijk op tot een warme 23 à 24 graden, in stedelijke gebieden vaak ook 25 graden.
+                            In de avond verandert er weinig aan dit licht bewolkte weerbeeld, dan koelt het na zonsondergang snel af naar rond 16 graden.
+                            De wind blijft meestal zwak, misschien af en toe even nipt matig vanaf de middag (variërend windkracht 1 tot 3) komende vanuit het noordoosten.
+                        </p>
+                        <p><strong>Verwachting maandag 4 september 2023:</strong></p>
+                        <p>
+                            <em>Maandag mooi en warm nazomerweer, nog wel velden met dunne hoge bewolking.</em><br />
+                            In de nacht blijven er vooral nog velden met hoge bewolking aanwezig.
+                            De kans op vorming van nevel en mist is kleiner, maar hier en daar kan er zich toch nog wat grondmist vormen die dan na de ochtendschemering ook vrij snel zal gaan verdwijnen.
+                            Het wordt waarschijnlijk wel een iets frissere nacht met minimum temperaturen tussen 11 en 14 graden.
+                            Maandag overdag zijn er vooral zonnige perioden te verwachten, eventuele nevel en mist in de vroege ochtend zullen snel gaan verdwijnen.
+                            De zon blijft echter nog wel steeds een beetje afgeschermd worden door velden met dunnere hoge bewolking, maar deze bewolking zal gaandeweg steeds dunner worden zodat de zon vaker wat meer overtuigend gaat schijnen.
+                            De middagtemperaturen lopen nog enkele graden verder omhoog en gaan overal zomerse waarden bereiken van minstens 25 of 26 graden, in het laagland en binnen de bebouwde kom wordt het al snel 27 graden.
+                            Er volgt ook een fraaie avond met vrij weinig bewolking, vanaf de avondschemering koelt het wel redelijk snel af naar een iets frissere 17 à 18 graden.
+                            De wind komt uit een oostelijke richting en gaat later op de dag iets meer toenemen naar matig (tot windkracht 3).
+                        </p>
+                        <p>
+                            <em>Zondag een grijze start, later op de dag wel overal fletse zonneschijn.</em><br />
+                            In de nacht en vroege ochtend was het overal droog.
+                            Op velden met wat dunne hoge bewolking uitgezonderd verliep de nacht grotendeels opgeklaard.
+                            Het werd wel overal nevelig en na 04.00 uur op steeds meer plaatsen ook mistig.
+                            De minimum temperatuur daalde naar 13 of 14 graden.
+                            Zondag overdag begint de ochtend in Zuid-Limburg met nevel en mist op de meeste plaatsen, bij dichtere mist is zelfs wat hele lichte motregen mogelijk.
+                            Later in de ochtend gaat de nevel en mist steeds verder oplossen en wordt er voor de rest een droge en vrij zonnige dag verwacht.
+                            De zon schijnt echter niet voluit omdat er velden met hoge bewolking zullen blijven voorkomen, deze schijnt er meestal nog wel redelijk doorheen maar er zijn ook momenten mogelijk dat deze bewolking net wat dikker wordt zodat de zon er toch meer moeite mee zal hebben.
+                            De middagtemperatuur loopt wel weer redelijk op tot een warme 23 à 24 graden, in stedelijke gebieden vaak ook 25 graden.
+                            In de avond verandert er weinig aan dit licht bewolkte weerbeeld, dan koelt het na zonsondergang snel af naar rond 16 graden.
+                            De wind blijft meestal zwak, misschien af en toe even nipt matig vanaf de middag (variërend windkracht 1 tot 3) komende vanuit het noordoosten.
+                        </p>
+                        <p><strong>Verwachting maandag 4 september 2023:</strong></p>
+                        <p>
+                            <em>Maandag mooi en warm nazomerweer, nog wel velden met dunne hoge bewolking.</em><br />
+                            In de nacht blijven er vooral nog velden met hoge bewolking aanwezig.
+                            De kans op vorming van nevel en mist is kleiner, maar hier en daar kan er zich toch nog wat grondmist vormen die dan na de ochtendschemering ook vrij snel zal gaan verdwijnen.
+                            Het wordt waarschijnlijk wel een iets frissere nacht met minimum temperaturen tussen 11 en 14 graden.
+                            Maandag overdag zijn er vooral zonnige perioden te verwachten, eventuele nevel en mist in de vroege ochtend zullen snel gaan verdwijnen.
+                            De zon blijft echter nog wel steeds een beetje afgeschermd worden door velden met dunnere hoge bewolking, maar deze bewolking zal gaandeweg steeds dunner worden zodat de zon vaker wat meer overtuigend gaat schijnen.
+                            De middagtemperaturen lopen nog enkele graden verder omhoog en gaan overal zomerse waarden bereiken van minstens 25 of 26 graden, in het laagland en binnen de bebouwde kom wordt het al snel 27 graden.
+                            Er volgt ook een fraaie avond met vrij weinig bewolking, vanaf de avondschemering koelt het wel redelijk snel af naar een iets frissere 17 à 18 graden.
+                            De wind komt uit een oostelijke richting en gaat later op de dag iets meer toenemen naar matig (tot windkracht 3).
+                        </p>
+                        <p>
+                            <em>Zondag een grijze start, later op de dag wel overal fletse zonneschijn.</em><br />
+                            In de nacht en vroege ochtend was het overal droog.
+                            Op velden met wat dunne hoge bewolking uitgezonderd verliep de nacht grotendeels opgeklaard.
+                            Het werd wel overal nevelig en na 04.00 uur op steeds meer plaatsen ook mistig.
+                            De minimum temperatuur daalde naar 13 of 14 graden.
+                            Zondag overdag begint de ochtend in Zuid-Limburg met nevel en mist op de meeste plaatsen, bij dichtere mist is zelfs wat hele lichte motregen mogelijk.
+                            Later in de ochtend gaat de nevel en mist steeds verder oplossen en wordt er voor de rest een droge en vrij zonnige dag verwacht.
+                            De zon schijnt echter niet voluit omdat er velden met hoge bewolking zullen blijven voorkomen, deze schijnt er meestal nog wel redelijk doorheen maar er zijn ook momenten mogelijk dat deze bewolking net wat dikker wordt zodat de zon er toch meer moeite mee zal hebben.
+                            De middagtemperatuur loopt wel weer redelijk op tot een warme 23 à 24 graden, in stedelijke gebieden vaak ook 25 graden.
+                            In de avond verandert er weinig aan dit licht bewolkte weerbeeld, dan koelt het na zonsondergang snel af naar rond 16 graden.
+                            De wind blijft meestal zwak, misschien af en toe even nipt matig vanaf de middag (variërend windkracht 1 tot 3) komende vanuit het noordoosten.
+                        </p>
+                        <p><strong>Verwachting maandag 4 september 2023:</strong></p>
+                        <p>
+                            <em>Maandag mooi en warm nazomerweer, nog wel velden met dunne hoge bewolking.</em><br />
+                            In de nacht blijven er vooral nog velden met hoge bewolking aanwezig.
+                            De kans op vorming van nevel en mist is kleiner, maar hier en daar kan er zich toch nog wat grondmist vormen die dan na de ochtendschemering ook vrij snel zal gaan verdwijnen.
+                            Het wordt waarschijnlijk wel een iets frissere nacht met minimum temperaturen tussen 11 en 14 graden.
+                            Maandag overdag zijn er vooral zonnige perioden te verwachten, eventuele nevel en mist in de vroege ochtend zullen snel gaan verdwijnen.
+                            De zon blijft echter nog wel steeds een beetje afgeschermd worden door velden met dunnere hoge bewolking, maar deze bewolking zal gaandeweg steeds dunner worden zodat de zon vaker wat meer overtuigend gaat schijnen.
+                            De middagtemperaturen lopen nog enkele graden verder omhoog en gaan overal zomerse waarden bereiken van minstens 25 of 26 graden, in het laagland en binnen de bebouwde kom wordt het al snel 27 graden.
+                            Er volgt ook een fraaie avond met vrij weinig bewolking, vanaf de avondschemering koelt het wel redelijk snel af naar een iets frissere 17 à 18 graden.
+                            De wind komt uit een oostelijke richting en gaat later op de dag iets meer toenemen naar matig (tot windkracht 3).
+                        </p>
+                        <a id="sectie-lange-termijn"></a>
+                        <h5>Lange termijn berekeningen - Europese weermodel (ECMWF):</h5>
+                        <p>
+                            <em>Maandag mooi en warm nazomerweer, nog wel velden met dunne hoge bewolking.</em><br />
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita nisi nobis dolorem dolor corporis, quo, omnis quidem ullam qui voluptatem doloribus debitis quis nulla a. Commodi inventore, minus quo mollitia fugiat cumque veritatis. Eaque, quas nulla! Facere quasi eius rerum iure nobis! Quibusdam quas earum necessitatibus quasi maxime eveniet quae laborum ullam aliquid, ut possimus facilis consequuntur provident ducimus eligendi rem nesciunt eaque commodi fugit illum officia, dolores tempore. Officiis ipsum perferendis doloribus velit labore blanditiis ut excepturi minima et, quia nostrum ducimus est architecto officia, illum delectus repellat quae beatae cupiditate recusandae quisquam? Deleniti totam, molestias dolor illo quos accusamus voluptatem sit autem, perspiciatis labore sed tenetur. Aliquam dolorem minus aspernatur iure, eveniet accusantium porro perferendis magni! Quibusdam repellendus autem iure temporibus ipsam unde eos magni veniam? Nulla porro dolores dicta reiciendis incidunt quasi beatae recusandae in adipisci doloremque totam ducimus, perspiciatis quam expedita atque, veritatis impedit, vel inventore veniam? Quos cupiditate officiis esse, omnis sint ipsa deserunt, veritatis exercitationem illum adipisci reiciendis aspernatur, neque rerum possimus voluptas id commodi ipsum fuga quam? Odit ratione molestiae ducimus, nam repellendus consequuntur? Et non deserunt nobis atque nam provident odio, nisi enim culpa illum autem reiciendis blanditiis dolores labore ipsum molestiae quasi repellendus voluptatibus voluptatem odit! Provident aspernatur incidunt vitae necessitatibus molestiae ea quisquam quae quaerat, sunt nulla laboriosam quidem eligendi architecto quod saepe, neque soluta quibusdam sapiente tempore est corporis earum quis. Quod tempore, excepturi molestiae quo dicta tenetur necessitatibus earum alias ad fugiat aliquam esse, iusto totam. Aliquam nemo fuga impedit molestiae nobis sunt exercitationem harum illo facere commodi ipsum tempore vel maiores perferendis, aperiam rem quam, est aspernatur excepturi quidem minus vero fugiat? Optio unde delectus nam tenetur libero atque maiores, sed eum velit repellat est, vitae beatae a, nulla aut amet fugiat soluta rerum! Ex assumenda, ullam earum quisquam suscipit illum ut quos distinctio iusto ipsam ipsa! Error atque amet molestias voluptatum vitae ut vel labore cum possimus veniam dignissimos rem non repudiandae, natus veritatis ipsam architecto sint autem unde vero? Autem iure optio aliquam vel nobis laborum tempore dolorem at beatae cumque quisquam quas facilis omnis, maxime quos rerum natus pariatur reiciendis ipsum quidem sunt aperiam sit! Rem voluptates atque modi illo eveniet magnam vel non, autem optio veritatis nulla. At ratione rerum nobis, quis beatae quasi debitis corrupti excepturi doloremque harum itaque omnis illum fugit veniam dicta iste. At eum quia adipisci deleniti, consequuntur ea sit recusandae consectetur dolorum voluptas voluptatem, quasi saepe incidunt? Vel voluptates cupiditate reiciendis dolorum quod, totam excepturi laborum culpa porro quas inventore illum fuga in iste ad dignissimos iure aperiam suscipit ab minus fugiat nisi. Vitae ut obcaecati quo officiis dicta ipsa sint rerum consequuntur veniam reiciendis, praesentium qui cupiditate repellat minus quas suscipit? Repellendus ex non rerum. Repellat aliquam, assumenda est sed tempore minima nihil ab at quaerat fuga aspernatur delectus officiis sequi magnam eos error. Dolores, adipisci. Aliquid provident earum id, quam accusantium quidem accusamus dolor vel, nostrum eius, quisquam tenetur sit molestiae facilis quo totam natus.
+                        </p>
+                        <a id="sectie-neerslagradar"></a>
+                        <h5>Neerslagradar</h5>
+                        <!--<p>
+                            <iframe src="https://gadgets.buienradar.nl/gadget/zoommap/?lat=50.84833&amp;lng=5.68889&amp;overname=2&amp;zoom=8&amp;naam=Maastricht&amp;size=3&amp;voor=0" name="I1"  height="512" scrolling="no" width="550"></iframe>
+                        <a id="sectie-statistieken"></a>-->
+                        <h5>Statistieken</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic explicabo totam, nihil eius earum aliquam cumque fugit doloribus corporis fuga odit aut dicta quas, facilis consequuntur accusantium iure similique quo illo ipsam rerum? Omnis temporibus hic nesciunt reiciendis voluptatum ducimus consequuntur molestias ipsa eius. Libero nulla fugit voluptatem, doloribus est facilis? Dolore quibusdam voluptatem repudiandae sint saepe, eveniet voluptatibus asperiores, nemo nisi, unde incidunt. Dolorum officia quisquam officiis libero ex illum molestiae temporibus tempora cum nihil esse, eum recusandae modi nostrum omnis beatae saepe consectetur dolorem fugiat eveniet totam accusantium est! Omnis harum eum, animi debitis incidunt, non, unde recusandae cum voluptate culpa tempora veritatis enim suscipit amet. Eveniet veritatis illo sint nesciunt doloribus rerum dicta amet quam laudantium numquam, corrupti, dignissimos sapiente rem consequatur aliquam et quasi vitae, beatae aliquid necessitatibus voluptates libero eum. Deleniti voluptatum, recusandae accusamus aperiam corporis distinctio quo dolor saepe nihil quisquam aliquam! Harum distinctio dolorum necessitatibus perferendis molestiae sunt nulla. Numquam quas tenetur similique dolores qui iusto sapiente nihil. Asperiores, fuga soluta voluptatum vitae omnis ullam? Omnis hic dolores ipsam soluta expedita perferendis assumenda nesciunt dolorem recusandae quas, tempore quia corporis id fugiat iste explicabo ullam dicta nostrum repellat. Maxime dolore repudiandae dignissimos quisquam.
+                        </p>
+                        <a id="sectie-weerfoto"></a>
+                        <h5>Weerfoto</h5>
+                        <p>
+                            <!--<img src="weerfoto.jpg" width="100%">-->
+                            Foto:  Vincent Schreurs<br />
+                            Plaats:  Heerlen - Grunsvenplein (Zuid-Limburg, Nederland)<br />
+                            Datum:  zaterdag 2 september 2023<br />
+                            <a href="#">Klik hier voor meer weerfoto's</a>
+                        </p>
+                        <a id="sectie-waarschuwingen"></a>
+                        <h5>Waarschuwingen</h5>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 py-3 order-1 order-lg-3">
+                        <h5>Snel naar</h5>
+                        <div class="d-grid gap-2">
+                            <a href="#sectie-shoutbox" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Shoutbox</a>
+                            <a href="#sectie-lange-termijn" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Lange termijn berekening</a>
+                            <a href="#sectie-neerslagradar" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Neerslagradar</a>
+                            <a href="#sectie-neerslagradar" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Statistieken</a>
+                            <a href="#sectie-weerfoto" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Weerfoto</a>
+                            <a href="#sectie-waarschuwingen" class="btn btn-sm btn-outline-primary btn-lg btn-block" role="button" aria-pressed="true">Waarschuwingen</a>
+                        </div>
+                    </div>
+                </div><!-- Einde row met 3 kolommen met actueel weer / uitgebreide verwachtingen / snelle links -->
+                <!--<div class="row navbar-dark blauw-menu sticky-top shadow rounded p-4 mb-5">
+                    &copy; 2023 - MeteoMaastricht.nl
+                </div>-->
+            </div><!-- einde container //  -->
+        </section>
+    </div><!-- einde div container - van helemaal het begin -->
+</body>
+</html>
